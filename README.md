@@ -11,7 +11,3 @@ $ git archive --format zip -o /path/to/rev-a.zip 4d268f
 ```
 
 where the hash of the tag can be found by running `git show rev-a` for the specific tag.
-
-### Note
-
-Revision A was developed pre `git` so is not available.
