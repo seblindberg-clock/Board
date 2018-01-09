@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.0.1">
+<eagle version="8.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
+<setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
@@ -1671,6 +1672,69 @@
 <wire x1="2.5" y1="-3" x2="-2.5" y2="-3" width="0.127" layer="51"/>
 <wire x1="-2.5" y1="-3" x2="-2.5" y2="-1.5" width="0.127" layer="51"/>
 </package>
+<package name="0805_LED">
+<wire x1="-0.3" y1="0.6" x2="0.3" y2="0.6" width="0.1524" layer="21"/>
+<wire x1="-0.3" y1="-0.6" x2="0.3" y2="-0.6" width="0.1524" layer="21"/>
+<smd name="A" x="-0.9" y="0" dx="0.8" dy="1.2" layer="1"/>
+<smd name="C" x="0.9" y="0" dx="0.8" dy="1.2" layer="1"/>
+<text x="1.8" y="0" size="1.016" layer="25" font="vector" ratio="12" align="center-left">&gt;NAME</text>
+<wire x1="-0.204" y1="0.254" x2="0.204" y2="0" width="0.1524" layer="21"/>
+<wire x1="0.204" y1="0" x2="-0.204" y2="-0.254" width="0.1524" layer="21"/>
+<wire x1="-0.204" y1="-0.254" x2="-0.204" y2="0.254" width="0.1524" layer="21"/>
+</package>
+<package name="LED_3MM">
+<wire x1="1.5748" y1="-1.27" x2="1.5748" y2="1.27" width="0.254" layer="51"/>
+<wire x1="0" y1="2.032" x2="1.561" y2="1.3009" width="0.254" layer="21" curve="-50.193108" cap="flat"/>
+<wire x1="-1.7421" y1="1.0324" x2="0" y2="2.032" width="0.254" layer="21" curve="-61.926949" cap="flat"/>
+<wire x1="0" y1="-2.032" x2="1.5512" y2="-1.3126" width="0.254" layer="21" curve="49.763022" cap="flat"/>
+<wire x1="-1.7389" y1="-1.059" x2="0" y2="-2.032" width="0.254" layer="21" curve="60.255215" cap="flat"/>
+<wire x1="-2.032" y1="0" x2="-1.7383" y2="1.0396" width="0.254" layer="51" curve="-28.301701" cap="flat"/>
+<wire x1="-2.032" y1="0" x2="-1.7306" y2="-1.065" width="0.254" layer="51" curve="31.60822" cap="flat"/>
+<wire x1="1.5748" y1="1.2954" x2="1.5748" y2="1.1684" width="0.254" layer="21"/>
+<wire x1="1.5748" y1="-1.2954" x2="1.5748" y2="-1.2192" width="0.254" layer="21"/>
+<pad name="A" x="-1.27" y="0" drill="0.8128" diameter="1.8796"/>
+<pad name="K" x="1.27" y="0" drill="0.8128" diameter="1.8796"/>
+<text x="1.905" y="0.381" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="1.905" y="-1.651" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
+</package>
+<package name="0603_LED_BACKSIDE">
+<description>Made for the &lt;a href="http://se.mouser.com/Search/ProductDetail.aspx?R=LY_Q971-H1L2-36virtualkey62510000virtualkey720-LYQ971H1L236"&gt;LY Q971-H1L2-36&lt;/a&gt; 0603 Red LED</description>
+<hole x="0" y="0" drill="0.65"/>
+<smd name="A" x="-0.9" y="0" dx="1.2" dy="0.8" layer="1" rot="R90"/>
+<smd name="C" x="0.9" y="0" dx="1.2" dy="0.8" layer="1" rot="R90"/>
+<wire x1="-0.127" y1="-0.889" x2="0.127" y2="-0.762" width="0.127" layer="21"/>
+<wire x1="0.127" y1="-0.762" x2="-0.127" y2="-0.635" width="0.127" layer="21"/>
+<wire x1="-0.127" y1="-0.635" x2="-0.127" y2="-0.889" width="0.127" layer="21"/>
+<text x="-0.889" y="0.762" size="0.4064" layer="25">&gt;NAME</text>
+</package>
+<package name="1210_LED">
+<description>Specifically this package from &lt;a href="http://www.ebay.com/itm/100-pcs-white-3528-PLCC-2-1210-SMT-SMD-LED-Strip-Light-/260877379524?_trksid=p5197.m1992&amp;_trkparms=aid%3D111000%26algo%3DREC.CURRENT%26ao%3D1%26asc%3D14%26meid%3D5062443358657181410%26pid%3D100015%26prg%3D1006%26rk%3D1%26sd%3D260877379524%26"&gt;EBAY&lt;/a&gt;</description>
+<smd name="A" x="-1.375" y="0" dx="0.75" dy="2.2" layer="1"/>
+<smd name="C" x="1.375" y="0" dx="0.75" dy="2.2" layer="1"/>
+<wire x1="1.6" y1="1.4" x2="1.6" y2="-0.7" width="0.127" layer="51"/>
+<wire x1="1.6" y1="-0.7" x2="1.6" y2="-1.4" width="0.127" layer="51"/>
+<wire x1="1.6" y1="-1.4" x2="0.9" y2="-1.4" width="0.127" layer="51"/>
+<wire x1="0.9" y1="-1.4" x2="-1.6" y2="-1.4" width="0.127" layer="51"/>
+<wire x1="-1.6" y1="-1.4" x2="-1.6" y2="1.4" width="0.127" layer="51"/>
+<wire x1="-1.6" y1="1.4" x2="1.6" y2="1.4" width="0.127" layer="51"/>
+<wire x1="1.6" y1="-0.7" x2="0.9" y2="-1.4" width="0.127" layer="51"/>
+<circle x="0" y="0" radius="1.2" width="0.127" layer="51"/>
+<wire x1="-0.204" y1="0.254" x2="0.204" y2="0" width="0.1524" layer="21"/>
+<wire x1="0.204" y1="0" x2="-0.204" y2="-0.254" width="0.1524" layer="21"/>
+<wire x1="-0.204" y1="-0.254" x2="-0.204" y2="0.254" width="0.1524" layer="21"/>
+</package>
+<package name="LED_STRIP_MONO">
+<wire x1="-2" y1="4" x2="2" y2="4" width="0.122" layer="21"/>
+<wire x1="2" y1="4" x2="2" y2="-4" width="0.122" layer="21"/>
+<wire x1="2" y1="-4" x2="-2" y2="-4" width="0.122" layer="21"/>
+<wire x1="-2" y1="-4" x2="-2" y2="4" width="0.122" layer="21"/>
+<smd name="A" x="0" y="2.5" dx="3.4" dy="1.4" layer="1"/>
+<smd name="C" x="0" y="-2.5" dx="3.4" dy="1.4" layer="1"/>
+<text x="1" y="1" size="1.016" layer="21" font="vector" ratio="12" align="center">+</text>
+<wire x1="0" y1="4" x2="-8" y2="4" width="0.122" layer="51" style="shortdash"/>
+<wire x1="0" y1="-4" x2="-8" y2="-4" width="0.122" layer="51" style="shortdash"/>
+<wire x1="0" y1="4" x2="0" y2="-4" width="0.122" layer="51" style="shortdash"/>
+</package>
 </packages>
 <symbols>
 <symbol name="NMOS">
@@ -2078,6 +2142,31 @@
 <wire x1="7.62" y1="7.62" x2="7.62" y2="-5.08" width="0.254" layer="94"/>
 <wire x1="7.62" y1="-5.08" x2="-10.16" y2="-5.08" width="0.254" layer="94"/>
 <text x="-7.62" y="-7.62" size="1.27" layer="95">&gt;NAME</text>
+</symbol>
+<symbol name="LED">
+<wire x1="1.27" y1="0" x2="0" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="0" y1="-2.54" x2="-1.27" y2="0" width="0.254" layer="94"/>
+<wire x1="1.27" y1="-2.54" x2="0" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="0" y1="-2.54" x2="-1.27" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="1.27" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="-1.27" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="0" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="-2.032" y1="-0.762" x2="-3.429" y2="-2.159" width="0.1524" layer="94"/>
+<wire x1="-1.905" y1="-1.905" x2="-3.302" y2="-3.302" width="0.1524" layer="94"/>
+<text x="3.556" y="-4.572" size="1.778" layer="95" rot="R90">&gt;NAME</text>
+<text x="5.715" y="-4.572" size="1.778" layer="96" rot="R90">&gt;VALUE</text>
+<pin name="C" x="0" y="-5.08" visible="off" length="short" direction="pas" rot="R90"/>
+<pin name="A" x="0" y="2.54" visible="off" length="short" direction="pas" rot="R270"/>
+<polygon width="0.1524" layer="94">
+<vertex x="-3.429" y="-2.159"/>
+<vertex x="-3.048" y="-1.27"/>
+<vertex x="-2.54" y="-1.778"/>
+</polygon>
+<polygon width="0.1524" layer="94">
+<vertex x="-3.302" y="-3.302"/>
+<vertex x="-2.921" y="-2.413"/>
+<vertex x="-2.413" y="-2.921"/>
+</polygon>
 </symbol>
 </symbols>
 <devicesets>
@@ -2577,6 +2666,58 @@
 <connect gate="G$1" pin="3" pad="4"/>
 <connect gate="G$1" pin="C" pad="3C"/>
 <connect gate="G$1" pin="GND" pad="CASE1 CASE2 CASE3 CASE4" route="any"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="LED" prefix="D" uservalue="yes">
+<gates>
+<gate name="G$1" symbol="LED" x="0" y="0"/>
+</gates>
+<devices>
+<device name="_0805" package="0805_LED">
+<connects>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="C" pad="C"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="_3MM" package="LED_3MM">
+<connects>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="C" pad="K"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="_0603_BACKSIDE" package="0603_LED_BACKSIDE">
+<connects>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="C" pad="C"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="_1210" package="1210_LED">
+<connects>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="C" pad="C"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="_STRIP" package="LED_STRIP_MONO">
+<connects>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="C" pad="C"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -4146,6 +4287,10 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <part name="P40" library="aesthetics" deviceset="PVDD" device=""/>
 <part name="J7" library="Connectors" deviceset="1X2" device=""/>
 <part name="P41" library="aesthetics" deviceset="PVDD" device=""/>
+<part name="D2" library="Sebastian" deviceset="LED" device="_0805"/>
+<part name="R14" library="Sebastian" deviceset="R" device="_0603" value="1k"/>
+<part name="P42" library="aesthetics" deviceset="GND" device=""/>
+<part name="P43" library="aesthetics" deviceset="PVDD" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -4170,14 +4315,14 @@ DTR signal</text>
 <text x="165.1" y="20.32" size="1.778" layer="97" font="vector" align="top-left">Simple ESP8266 board for
 powering and controlling a 
 Neopixel LED strip.</text>
-<text x="22.86" y="129.54" size="1.27" layer="97" font="vector" align="center-left">Mains power input</text>
+<text x="12.7" y="129.54" size="1.27" layer="97" font="vector" align="center-left">Mains power input</text>
 <text x="134.62" y="162.56" size="1.27" layer="97" font="vector" align="center-left">Optional switch</text>
 </plain>
 <instances>
 <instance part="Q1" gate="G$1" x="172.72" y="137.16" rot="R270"/>
 <instance part="R5" gate="G$1" x="165.1" y="147.32" rot="R90"/>
 <instance part="R6" gate="G$1" x="182.88" y="147.32" rot="R90"/>
-<instance part="J2" gate="G$1" x="27.94" y="139.7" rot="MR0"/>
+<instance part="J2" gate="G$1" x="17.78" y="139.7" rot="MR0"/>
 <instance part="U3" gate="G$1" x="152.4" y="81.28"/>
 <instance part="JP1" gate="G$1" x="208.28" y="137.16"/>
 <instance part="J5" gate="G$1" x="243.84" y="139.7"/>
@@ -4218,9 +4363,9 @@ Neopixel LED strip.</text>
 <instance part="P11" gate="G$1" x="93.98" y="129.54"/>
 <instance part="P13" gate="G$1" x="104.14" y="144.78"/>
 <instance part="P9" gate="G$1" x="83.82" y="144.78"/>
-<instance part="J3" gate="G$1" x="60.96" y="132.08"/>
-<instance part="P6" gate="G$1" x="66.04" y="129.54"/>
-<instance part="P7" gate="G$1" x="73.66" y="144.78"/>
+<instance part="J3" gate="G$1" x="50.8" y="132.08"/>
+<instance part="P6" gate="G$1" x="55.88" y="129.54"/>
+<instance part="P7" gate="G$1" x="63.5" y="144.78"/>
 <instance part="U2" gate="G$1" x="127" y="25.4"/>
 <instance part="J4" gate="G$1" x="86.36" y="76.2"/>
 <instance part="C4" gate="G$1" x="83.82" y="134.62"/>
@@ -4258,10 +4403,14 @@ Neopixel LED strip.</text>
 <instance part="U$1" gate="G$1" x="142.24" y="152.4" rot="MR0"/>
 <instance part="P38" gate="G$1" x="157.48" y="144.78"/>
 <instance part="P39" gate="G$1" x="127" y="144.78"/>
-<instance part="J6" gate="G$1" x="27.94" y="154.94" rot="MR0"/>
-<instance part="P40" gate="G$1" x="35.56" y="157.48"/>
-<instance part="J7" gate="G$1" x="48.26" y="154.94" rot="MR0"/>
-<instance part="P41" gate="G$1" x="55.88" y="157.48"/>
+<instance part="J6" gate="G$1" x="17.78" y="154.94" rot="MR0"/>
+<instance part="P40" gate="G$1" x="25.4" y="157.48"/>
+<instance part="J7" gate="G$1" x="38.1" y="154.94" rot="MR0"/>
+<instance part="P41" gate="G$1" x="45.72" y="157.48"/>
+<instance part="D2" gate="G$1" x="73.66" y="137.16"/>
+<instance part="R14" gate="G$1" x="73.66" y="144.78" rot="R90"/>
+<instance part="P42" gate="G$1" x="73.66" y="129.54"/>
+<instance part="P43" gate="G$1" x="73.66" y="149.86"/>
 </instances>
 <busses>
 </busses>
@@ -4597,8 +4746,8 @@ Neopixel LED strip.</text>
 </segment>
 <segment>
 <pinref part="J3" gate="G$1" pin="GND"/>
-<wire x1="63.5" y1="134.62" x2="66.04" y2="134.62" width="0.1524" layer="91"/>
-<wire x1="66.04" y1="134.62" x2="66.04" y2="132.08" width="0.1524" layer="91"/>
+<wire x1="53.34" y1="134.62" x2="55.88" y2="134.62" width="0.1524" layer="91"/>
+<wire x1="55.88" y1="134.62" x2="55.88" y2="132.08" width="0.1524" layer="91"/>
 <pinref part="P6" gate="G$1" pin="GND"/>
 </segment>
 <segment>
@@ -4676,6 +4825,10 @@ Neopixel LED strip.</text>
 <wire x1="127" y1="151.892" x2="127" y2="147.32" width="0.1524" layer="91"/>
 <pinref part="P39" gate="G$1" pin="GND"/>
 </segment>
+<segment>
+<pinref part="P42" gate="G$1" pin="GND"/>
+<pinref part="D2" gate="G$1" pin="C"/>
+</segment>
 </net>
 <net name="PVDD" class="0">
 <segment>
@@ -4716,21 +4869,25 @@ Neopixel LED strip.</text>
 </segment>
 <segment>
 <pinref part="J3" gate="G$1" pin="PWR"/>
-<wire x1="63.5" y1="139.7" x2="73.66" y2="139.7" width="0.1524" layer="91"/>
-<wire x1="73.66" y1="139.7" x2="73.66" y2="144.78" width="0.1524" layer="91"/>
+<wire x1="53.34" y1="139.7" x2="63.5" y2="139.7" width="0.1524" layer="91"/>
+<wire x1="63.5" y1="139.7" x2="63.5" y2="144.78" width="0.1524" layer="91"/>
 <pinref part="P7" gate="G$1" pin="PVDD"/>
 </segment>
 <segment>
 <pinref part="J6" gate="G$1" pin="1"/>
-<wire x1="33.02" y1="154.94" x2="35.56" y2="154.94" width="0.1524" layer="91"/>
-<wire x1="35.56" y1="154.94" x2="35.56" y2="157.48" width="0.1524" layer="91"/>
+<wire x1="22.86" y1="154.94" x2="25.4" y2="154.94" width="0.1524" layer="91"/>
+<wire x1="25.4" y1="154.94" x2="25.4" y2="157.48" width="0.1524" layer="91"/>
 <pinref part="P40" gate="G$1" pin="PVDD"/>
 </segment>
 <segment>
 <pinref part="J7" gate="G$1" pin="1"/>
-<wire x1="53.34" y1="154.94" x2="55.88" y2="154.94" width="0.1524" layer="91"/>
-<wire x1="55.88" y1="154.94" x2="55.88" y2="157.48" width="0.1524" layer="91"/>
+<wire x1="43.18" y1="154.94" x2="45.72" y2="154.94" width="0.1524" layer="91"/>
+<wire x1="45.72" y1="154.94" x2="45.72" y2="157.48" width="0.1524" layer="91"/>
 <pinref part="P41" gate="G$1" pin="PVDD"/>
+</segment>
+<segment>
+<pinref part="R14" gate="G$1" pin="2"/>
+<pinref part="P43" gate="G$1" pin="PVDD"/>
 </segment>
 </net>
 <net name="N$14" class="0">
@@ -4743,15 +4900,15 @@ Neopixel LED strip.</text>
 <net name="L" class="0">
 <segment>
 <pinref part="J2" gate="G$1" pin="1"/>
-<wire x1="33.02" y1="139.7" x2="35.56" y2="139.7" width="0.1524" layer="91"/>
-<label x="35.56" y="139.7" size="1.27" layer="95" font="vector" xref="yes"/>
+<wire x1="22.86" y1="139.7" x2="25.4" y2="139.7" width="0.1524" layer="91"/>
+<label x="25.4" y="139.7" size="1.27" layer="95" font="vector" xref="yes"/>
 </segment>
 </net>
 <net name="N" class="0">
 <segment>
 <pinref part="J2" gate="G$1" pin="2"/>
-<wire x1="33.02" y1="137.16" x2="35.56" y2="137.16" width="0.1524" layer="91"/>
-<label x="35.56" y="137.16" size="1.27" layer="95" font="vector" xref="yes"/>
+<wire x1="22.86" y1="137.16" x2="25.4" y2="137.16" width="0.1524" layer="91"/>
+<label x="25.4" y="137.16" size="1.27" layer="95" font="vector" xref="yes"/>
 </segment>
 </net>
 <net name="SDA" class="0">
@@ -4891,15 +5048,21 @@ Neopixel LED strip.</text>
 <net name="SUP_1" class="0">
 <segment>
 <pinref part="J6" gate="G$1" pin="2"/>
-<wire x1="33.02" y1="152.4" x2="35.56" y2="152.4" width="0.1524" layer="91"/>
-<label x="35.56" y="152.4" size="1.27" layer="95" font="vector" xref="yes"/>
+<wire x1="22.86" y1="152.4" x2="25.4" y2="152.4" width="0.1524" layer="91"/>
+<label x="25.4" y="152.4" size="1.27" layer="95" font="vector" xref="yes"/>
 </segment>
 </net>
 <net name="SUP_2" class="0">
 <segment>
 <pinref part="J7" gate="G$1" pin="2"/>
-<wire x1="53.34" y1="152.4" x2="55.88" y2="152.4" width="0.1524" layer="91"/>
-<label x="55.88" y="152.4" size="1.27" layer="95" font="vector" xref="yes"/>
+<wire x1="43.18" y1="152.4" x2="45.72" y2="152.4" width="0.1524" layer="91"/>
+<label x="45.72" y="152.4" size="1.27" layer="95" font="vector" xref="yes"/>
+</segment>
+</net>
+<net name="N$4" class="0">
+<segment>
+<pinref part="D2" gate="G$1" pin="A"/>
+<pinref part="R14" gate="G$1" pin="1"/>
 </segment>
 </net>
 </nets>
