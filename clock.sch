@@ -4325,6 +4325,7 @@ Neopixel LED strip.</text>
 <text x="73.66" y="124.46" size="1.27" layer="97" font="vector" align="center">Power LED</text>
 <text x="215.9" y="124.46" size="1.27" layer="97" font="vector" align="center-left">Decoupling</text>
 <text x="198.12" y="60.96" size="1.27" layer="97" font="vector" align="center">Status LED</text>
+<text x="12.7" y="121.92" size="1.27" layer="97" font="vector" align="center-left">Jumpers to disconnect supplies from the input</text>
 </plain>
 <instances>
 <instance part="Q1" gate="G$1" x="172.72" y="137.16" rot="R270"/>
