@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.5.0">
+<eagle version="8.7.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -4291,11 +4291,14 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <part name="R14" library="Sebastian" deviceset="R" device="_0603" value="1k"/>
 <part name="P42" library="aesthetics" deviceset="GND" device=""/>
 <part name="P43" library="aesthetics" deviceset="PVDD" device=""/>
+<part name="D3" library="Sebastian" deviceset="LED" device="_0805"/>
+<part name="R15" library="Sebastian" deviceset="R" device="_0603" value="1k"/>
+<part name="P44" library="aesthetics" deviceset="PVDD" device=""/>
 </parts>
 <sheets>
 <sheet>
 <plain>
-<text x="144.78" y="129.54" size="1.27" layer="97" font="vector" align="center-left">Selectable IO</text>
+<text x="144.78" y="124.46" size="1.27" layer="97" font="vector" align="center-left">Selectable IO</text>
 <text x="162.56" y="167.64" size="5.08" layer="97" font="vector" align="center-left">LED Interface</text>
 <text x="35.56" y="167.64" size="5.08" layer="97" font="vector" align="center-left">Power Input</text>
 <text x="63.5" y="48.26" size="5.08" layer="97" font="vector" align="center-left">i2c Sensors</text>
@@ -4315,34 +4318,37 @@ DTR signal</text>
 <text x="165.1" y="20.32" size="1.778" layer="97" font="vector" align="top-left">Simple ESP8266 board for
 powering and controlling a 
 Neopixel LED strip.</text>
-<text x="12.7" y="129.54" size="1.27" layer="97" font="vector" align="center-left">Mains power input</text>
+<text x="12.7" y="124.46" size="1.27" layer="97" font="vector" align="center-left">Mains power input</text>
 <text x="134.62" y="162.56" size="1.27" layer="97" font="vector" align="center-left">Optional switch</text>
+<text x="73.66" y="124.46" size="1.27" layer="97" font="vector" align="center">Power LED</text>
+<text x="215.9" y="124.46" size="1.27" layer="97" font="vector" align="center-left">Decoupling</text>
+<text x="198.12" y="60.96" size="1.27" layer="97" font="vector" align="center">Status LED</text>
 </plain>
 <instances>
 <instance part="Q1" gate="G$1" x="172.72" y="137.16" rot="R270"/>
 <instance part="R5" gate="G$1" x="165.1" y="147.32" rot="R90"/>
 <instance part="R6" gate="G$1" x="182.88" y="147.32" rot="R90"/>
 <instance part="J2" gate="G$1" x="17.78" y="139.7" rot="MR0"/>
-<instance part="U3" gate="G$1" x="152.4" y="81.28"/>
+<instance part="U3" gate="G$1" x="149.86" y="81.28"/>
 <instance part="JP1" gate="G$1" x="208.28" y="137.16"/>
 <instance part="J5" gate="G$1" x="243.84" y="139.7"/>
 <instance part="C8" gate="G$1" x="218.44" y="137.16"/>
 <instance part="C9" gate="G$1" x="226.06" y="137.16"/>
 <instance part="J1" gate="G$1" x="22.86" y="76.2" rot="MR0"/>
-<instance part="R11" gate="G$1" x="208.28" y="86.36" rot="R180"/>
-<instance part="R10" gate="G$1" x="208.28" y="91.44" rot="R180"/>
-<instance part="R9" gate="G$1" x="208.28" y="96.52" rot="R180"/>
-<instance part="R12" gate="G$1" x="208.28" y="81.28" rot="R180"/>
-<instance part="R13" gate="G$1" x="208.28" y="76.2"/>
-<instance part="C10" gate="G$1" x="228.6" y="76.2"/>
+<instance part="R11" gate="G$1" x="213.36" y="86.36" rot="R180"/>
+<instance part="R10" gate="G$1" x="213.36" y="91.44" rot="R180"/>
+<instance part="R9" gate="G$1" x="213.36" y="96.52" rot="R180"/>
+<instance part="R12" gate="G$1" x="213.36" y="81.28" rot="R180"/>
+<instance part="R13" gate="G$1" x="213.36" y="76.2"/>
+<instance part="C10" gate="G$1" x="233.68" y="76.2"/>
 <instance part="C1" gate="G$1" x="45.72" y="86.36" rot="R90"/>
 <instance part="D1" gate="G$1" x="43.18" y="81.28" rot="R270"/>
 <instance part="P1" gate="G$1" x="30.48" y="66.04"/>
-<instance part="P22" gate="G$1" x="134.62" y="66.04"/>
-<instance part="P28" gate="G$1" x="200.66" y="66.04"/>
-<instance part="P35" gate="G$1" x="228.6" y="66.04"/>
-<instance part="P21" gate="G$1" x="134.62" y="93.98"/>
-<instance part="P27" gate="G$1" x="200.66" y="99.06"/>
+<instance part="P22" gate="G$1" x="132.08" y="66.04"/>
+<instance part="P28" gate="G$1" x="205.74" y="66.04"/>
+<instance part="P35" gate="G$1" x="233.68" y="66.04"/>
+<instance part="P21" gate="G$1" x="132.08" y="93.98"/>
+<instance part="P27" gate="G$1" x="205.74" y="99.06"/>
 <instance part="P31" gate="G$1" x="226.06" y="144.78"/>
 <instance part="P29" gate="G$1" x="218.44" y="144.78"/>
 <instance part="P30" gate="G$1" x="218.44" y="129.54"/>
@@ -4351,11 +4357,11 @@ Neopixel LED strip.</text>
 <instance part="P25" gate="G$1" x="198.12" y="144.78"/>
 <instance part="P26" gate="G$1" x="198.12" y="129.54"/>
 <instance part="P34" gate="G$1" x="236.22" y="129.54"/>
-<instance part="R8" gate="G$1" x="182.88" y="73.66"/>
-<instance part="SWT1" gate="G$1" x="238.76" y="73.66" rot="R90"/>
-<instance part="SWT2" gate="G$1" x="246.38" y="73.66" rot="R90"/>
-<instance part="P36" gate="G$1" x="238.76" y="66.04"/>
-<instance part="P37" gate="G$1" x="246.38" y="66.04"/>
+<instance part="R8" gate="G$1" x="177.8" y="73.66"/>
+<instance part="SWT1" gate="G$1" x="243.84" y="73.66" rot="R90"/>
+<instance part="SWT2" gate="G$1" x="251.46" y="73.66" rot="R90"/>
+<instance part="P36" gate="G$1" x="243.84" y="66.04"/>
+<instance part="P37" gate="G$1" x="251.46" y="66.04"/>
 <instance part="P24" gate="G$1" x="182.88" y="157.48"/>
 <instance part="P23" gate="G$1" x="165.1" y="157.48"/>
 <instance part="R7" gate="G$1" x="190.5" y="137.16"/>
@@ -4374,9 +4380,9 @@ Neopixel LED strip.</text>
 <instance part="P14" gate="G$1" x="104.14" y="129.54"/>
 <instance part="P8" gate="G$1" x="78.74" y="66.04"/>
 <instance part="P12" gate="G$1" x="99.06" y="71.12" rot="R270"/>
-<instance part="C7" gate="G$1" x="124.46" y="88.9"/>
-<instance part="P19" gate="G$1" x="124.46" y="93.98"/>
-<instance part="P20" gate="G$1" x="124.46" y="78.74"/>
+<instance part="C7" gate="G$1" x="121.92" y="88.9"/>
+<instance part="P19" gate="G$1" x="121.92" y="93.98"/>
+<instance part="P20" gate="G$1" x="121.92" y="78.74"/>
 <instance part="R1" gate="G$1" x="30.48" y="27.94" rot="R90"/>
 <instance part="R2" gate="G$1" x="38.1" y="27.94" rot="R90"/>
 <instance part="P2" gate="G$1" x="30.48" y="33.02"/>
@@ -4394,7 +4400,7 @@ Neopixel LED strip.</text>
 <instance part="C2" gate="G$1" x="50.8" y="25.4"/>
 <instance part="C3" gate="G$1" x="55.88" y="25.4"/>
 <instance part="GND1" gate="1" x="50.8" y="12.7"/>
-<instance part="TP1" gate="G$1" x="172.72" y="71.12" rot="R270"/>
+<instance part="TP1" gate="G$1" x="170.18" y="71.12" rot="R270"/>
 <instance part="TP2" gate="G$1" x="165.1" y="134.62" rot="R180"/>
 <instance part="TP3" gate="G$1" x="182.88" y="134.62" rot="R180"/>
 <instance part="P4" gate="G$1" x="48.26" y="40.64"/>
@@ -4411,6 +4417,9 @@ Neopixel LED strip.</text>
 <instance part="R14" gate="G$1" x="73.66" y="144.78" rot="R90"/>
 <instance part="P42" gate="G$1" x="73.66" y="129.54"/>
 <instance part="P43" gate="G$1" x="73.66" y="149.86"/>
+<instance part="D3" gate="G$1" x="198.12" y="76.2"/>
+<instance part="R15" gate="G$1" x="198.12" y="83.82" rot="R90"/>
+<instance part="P44" gate="G$1" x="198.12" y="88.9"/>
 </instances>
 <busses>
 </busses>
@@ -4418,26 +4427,26 @@ Neopixel LED strip.</text>
 <net name="VDD" class="0">
 <segment>
 <pinref part="U3" gate="G$1" pin="VCC"/>
-<wire x1="137.16" y1="91.44" x2="134.62" y2="91.44" width="0.1524" layer="91"/>
-<wire x1="134.62" y1="91.44" x2="134.62" y2="93.98" width="0.1524" layer="91"/>
+<wire x1="134.62" y1="91.44" x2="132.08" y2="91.44" width="0.1524" layer="91"/>
+<wire x1="132.08" y1="91.44" x2="132.08" y2="93.98" width="0.1524" layer="91"/>
 <pinref part="P21" gate="G$1" pin="VDD"/>
 </segment>
 <segment>
 <pinref part="R11" gate="G$1" pin="2"/>
-<wire x1="203.2" y1="86.36" x2="200.66" y2="86.36" width="0.1524" layer="91"/>
+<wire x1="208.28" y1="86.36" x2="205.74" y2="86.36" width="0.1524" layer="91"/>
 <pinref part="R12" gate="G$1" pin="2"/>
-<wire x1="203.2" y1="81.28" x2="200.66" y2="81.28" width="0.1524" layer="91"/>
-<wire x1="200.66" y1="81.28" x2="200.66" y2="86.36" width="0.1524" layer="91"/>
-<junction x="200.66" y="86.36"/>
-<wire x1="200.66" y1="86.36" x2="200.66" y2="91.44" width="0.1524" layer="91"/>
+<wire x1="208.28" y1="81.28" x2="205.74" y2="81.28" width="0.1524" layer="91"/>
+<wire x1="205.74" y1="81.28" x2="205.74" y2="86.36" width="0.1524" layer="91"/>
+<junction x="205.74" y="86.36"/>
+<wire x1="205.74" y1="86.36" x2="205.74" y2="91.44" width="0.1524" layer="91"/>
 <pinref part="R10" gate="G$1" pin="2"/>
-<wire x1="200.66" y1="91.44" x2="200.66" y2="96.52" width="0.1524" layer="91"/>
-<wire x1="200.66" y1="96.52" x2="200.66" y2="99.06" width="0.1524" layer="91"/>
-<wire x1="203.2" y1="91.44" x2="200.66" y2="91.44" width="0.1524" layer="91"/>
-<junction x="200.66" y="91.44"/>
+<wire x1="205.74" y1="91.44" x2="205.74" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="205.74" y1="96.52" x2="205.74" y2="99.06" width="0.1524" layer="91"/>
+<wire x1="208.28" y1="91.44" x2="205.74" y2="91.44" width="0.1524" layer="91"/>
+<junction x="205.74" y="91.44"/>
 <pinref part="R9" gate="G$1" pin="2"/>
-<wire x1="203.2" y1="96.52" x2="200.66" y2="96.52" width="0.1524" layer="91"/>
-<junction x="200.66" y="96.52"/>
+<wire x1="208.28" y1="96.52" x2="205.74" y2="96.52" width="0.1524" layer="91"/>
+<junction x="205.74" y="96.52"/>
 <pinref part="P27" gate="G$1" pin="VDD"/>
 </segment>
 <segment>
@@ -4467,7 +4476,7 @@ Neopixel LED strip.</text>
 <segment>
 <pinref part="C7" gate="G$1" pin="1"/>
 <pinref part="P19" gate="G$1" pin="VDD"/>
-<wire x1="124.46" y1="91.44" x2="124.46" y2="93.98" width="0.1524" layer="91"/>
+<wire x1="121.92" y1="91.44" x2="121.92" y2="93.98" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="R1" gate="G$1" pin="2"/>
@@ -4534,34 +4543,39 @@ Neopixel LED strip.</text>
 <net name="IO0" class="0">
 <segment>
 <pinref part="R11" gate="G$1" pin="1"/>
-<wire x1="213.36" y1="86.36" x2="215.9" y2="86.36" width="0.1524" layer="91"/>
-<label x="215.9" y="86.36" size="1.27" layer="95" font="vector" xref="yes"/>
-<wire x1="215.9" y1="86.36" x2="215.9" y2="83.82" width="0.1524" layer="91"/>
-<wire x1="215.9" y1="83.82" x2="246.38" y2="83.82" width="0.1524" layer="91"/>
+<wire x1="218.44" y1="86.36" x2="220.98" y2="86.36" width="0.1524" layer="91"/>
+<label x="220.98" y="86.36" size="1.27" layer="95" font="vector" xref="yes"/>
+<wire x1="220.98" y1="86.36" x2="220.98" y2="83.82" width="0.1524" layer="91"/>
+<wire x1="220.98" y1="83.82" x2="251.46" y2="83.82" width="0.1524" layer="91"/>
 <pinref part="SWT2" gate="G$1" pin="P$2"/>
-<wire x1="246.38" y1="83.82" x2="246.38" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="251.46" y1="83.82" x2="251.46" y2="78.74" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="U3" gate="G$1" pin="IO0"/>
-<wire x1="137.16" y1="78.74" x2="134.62" y2="78.74" width="0.1524" layer="91"/>
-<label x="134.62" y="78.74" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
+<wire x1="134.62" y1="78.74" x2="132.08" y2="78.74" width="0.1524" layer="91"/>
+<label x="132.08" y="78.74" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
 </segment>
 <segment>
 <label x="53.34" y="81.28" size="1.27" layer="95" font="vector" xref="yes"/>
 <pinref part="D1" gate="G$1" pin="ANODE"/>
 <wire x1="53.34" y1="81.28" x2="48.26" y2="81.28" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="D3" gate="G$1" pin="C"/>
+<wire x1="198.12" y1="71.12" x2="198.12" y2="68.58" width="0.1524" layer="91"/>
+<label x="198.12" y="68.58" size="1.524" layer="95" font="vector" rot="R270" xref="yes"/>
+</segment>
 </net>
 <net name="IO2" class="0">
 <segment>
 <pinref part="R10" gate="G$1" pin="1"/>
-<wire x1="213.36" y1="91.44" x2="215.9" y2="91.44" width="0.1524" layer="91"/>
-<label x="215.9" y="91.44" size="1.27" layer="95" font="vector" xref="yes"/>
+<wire x1="218.44" y1="91.44" x2="220.98" y2="91.44" width="0.1524" layer="91"/>
+<label x="220.98" y="91.44" size="1.27" layer="95" font="vector" xref="yes"/>
 </segment>
 <segment>
 <pinref part="U3" gate="G$1" pin="IO2"/>
-<wire x1="167.64" y1="91.44" x2="170.18" y2="91.44" width="0.1524" layer="91"/>
-<label x="170.18" y="91.44" size="1.27" layer="95" font="vector" xref="yes"/>
+<wire x1="165.1" y1="91.44" x2="167.64" y2="91.44" width="0.1524" layer="91"/>
+<label x="167.64" y="91.44" size="1.27" layer="95" font="vector" xref="yes"/>
 </segment>
 <segment>
 <pinref part="R3" gate="G$1" pin="1"/>
@@ -4577,13 +4591,13 @@ Neopixel LED strip.</text>
 <net name="EN" class="0">
 <segment>
 <pinref part="R9" gate="G$1" pin="1"/>
-<wire x1="213.36" y1="96.52" x2="215.9" y2="96.52" width="0.1524" layer="91"/>
-<label x="215.9" y="96.52" size="1.27" layer="95" font="vector" xref="yes"/>
+<wire x1="218.44" y1="96.52" x2="220.98" y2="96.52" width="0.1524" layer="91"/>
+<label x="220.98" y="96.52" size="1.27" layer="95" font="vector" xref="yes"/>
 </segment>
 <segment>
 <pinref part="U3" gate="G$1" pin="EN"/>
-<wire x1="137.16" y1="76.2" x2="134.62" y2="76.2" width="0.1524" layer="91"/>
-<label x="134.62" y="76.2" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
+<wire x1="134.62" y1="76.2" x2="132.08" y2="76.2" width="0.1524" layer="91"/>
+<label x="132.08" y="76.2" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
 </segment>
 <segment>
 <pinref part="C1" gate="G$1" pin="2"/>
@@ -4594,36 +4608,36 @@ Neopixel LED strip.</text>
 <net name="RST" class="0">
 <segment>
 <pinref part="R12" gate="G$1" pin="1"/>
-<label x="215.9" y="81.28" size="1.27" layer="95" font="vector" xref="yes"/>
+<label x="220.98" y="81.28" size="1.27" layer="95" font="vector" xref="yes"/>
 <pinref part="C10" gate="G$1" pin="1"/>
-<wire x1="228.6" y1="78.74" x2="215.9" y2="78.74" width="0.1524" layer="91"/>
-<wire x1="215.9" y1="78.74" x2="215.9" y2="81.28" width="0.1524" layer="91"/>
-<wire x1="215.9" y1="81.28" x2="213.36" y2="81.28" width="0.1524" layer="91"/>
+<wire x1="233.68" y1="78.74" x2="220.98" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="220.98" y1="78.74" x2="220.98" y2="81.28" width="0.1524" layer="91"/>
+<wire x1="220.98" y1="81.28" x2="218.44" y2="81.28" width="0.1524" layer="91"/>
 <pinref part="SWT1" gate="G$1" pin="P$2"/>
-<wire x1="228.6" y1="78.74" x2="238.76" y2="78.74" width="0.1524" layer="91"/>
-<junction x="228.6" y="78.74"/>
+<wire x1="233.68" y1="78.74" x2="243.84" y2="78.74" width="0.1524" layer="91"/>
+<junction x="233.68" y="78.74"/>
 </segment>
 <segment>
 <pinref part="U3" gate="G$1" pin="RST"/>
-<wire x1="137.16" y1="86.36" x2="134.62" y2="86.36" width="0.1524" layer="91"/>
-<label x="134.62" y="86.36" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
+<wire x1="134.62" y1="86.36" x2="132.08" y2="86.36" width="0.1524" layer="91"/>
+<label x="132.08" y="86.36" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
 </segment>
 <segment>
 <pinref part="R8" gate="G$1" pin="2"/>
-<wire x1="187.96" y1="73.66" x2="190.5" y2="73.66" width="0.1524" layer="91"/>
-<label x="190.5" y="73.66" size="1.27" layer="95" font="vector" xref="yes"/>
+<wire x1="182.88" y1="73.66" x2="185.42" y2="73.66" width="0.1524" layer="91"/>
+<label x="185.42" y="73.66" size="1.27" layer="95" font="vector" xref="yes"/>
 </segment>
 </net>
 <net name="IO15" class="0">
 <segment>
 <pinref part="R13" gate="G$1" pin="2"/>
-<wire x1="213.36" y1="76.2" x2="215.9" y2="76.2" width="0.1524" layer="91"/>
-<label x="215.9" y="76.2" size="1.27" layer="95" font="vector" xref="yes"/>
+<wire x1="218.44" y1="76.2" x2="220.98" y2="76.2" width="0.1524" layer="91"/>
+<label x="220.98" y="76.2" size="1.27" layer="95" font="vector" xref="yes"/>
 </segment>
 <segment>
 <pinref part="U3" gate="G$1" pin="IO15"/>
-<wire x1="167.64" y1="76.2" x2="170.18" y2="76.2" width="0.1524" layer="91"/>
-<label x="170.18" y="76.2" size="1.27" layer="95" font="vector" xref="yes"/>
+<wire x1="165.1" y1="76.2" x2="167.64" y2="76.2" width="0.1524" layer="91"/>
+<label x="167.64" y="76.2" size="1.27" layer="95" font="vector" xref="yes"/>
 </segment>
 <segment>
 <pinref part="J4" gate="G$1" pin="5"/>
@@ -4634,8 +4648,8 @@ Neopixel LED strip.</text>
 <net name="RXD" class="0">
 <segment>
 <pinref part="U3" gate="G$1" pin="RX"/>
-<wire x1="137.16" y1="81.28" x2="134.62" y2="81.28" width="0.1524" layer="91"/>
-<label x="134.62" y="81.28" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
+<wire x1="134.62" y1="81.28" x2="132.08" y2="81.28" width="0.1524" layer="91"/>
+<label x="132.08" y="81.28" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
 </segment>
 <segment>
 <pinref part="J1" gate="G$1" pin="3"/>
@@ -4661,8 +4675,8 @@ Neopixel LED strip.</text>
 <net name="TXD" class="0">
 <segment>
 <pinref part="U3" gate="G$1" pin="TX"/>
-<wire x1="137.16" y1="83.82" x2="134.62" y2="83.82" width="0.1524" layer="91"/>
-<label x="134.62" y="83.82" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
+<wire x1="134.62" y1="83.82" x2="132.08" y2="83.82" width="0.1524" layer="91"/>
+<label x="132.08" y="83.82" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
 </segment>
 <segment>
 <pinref part="J1" gate="G$1" pin="2"/>
@@ -4694,20 +4708,20 @@ Neopixel LED strip.</text>
 </segment>
 <segment>
 <pinref part="U3" gate="G$1" pin="GND"/>
-<wire x1="134.62" y1="68.58" x2="134.62" y2="71.12" width="0.1524" layer="91"/>
-<wire x1="134.62" y1="71.12" x2="137.16" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="132.08" y1="68.58" x2="132.08" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="132.08" y1="71.12" x2="134.62" y2="71.12" width="0.1524" layer="91"/>
 <pinref part="P22" gate="G$1" pin="GND"/>
 </segment>
 <segment>
 <pinref part="R13" gate="G$1" pin="1"/>
-<wire x1="203.2" y1="76.2" x2="200.66" y2="76.2" width="0.1524" layer="91"/>
-<wire x1="200.66" y1="76.2" x2="200.66" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="208.28" y1="76.2" x2="205.74" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="205.74" y1="76.2" x2="205.74" y2="68.58" width="0.1524" layer="91"/>
 <pinref part="P28" gate="G$1" pin="GND"/>
 </segment>
 <segment>
 <pinref part="C10" gate="G$1" pin="2"/>
 <pinref part="P35" gate="G$1" pin="GND"/>
-<wire x1="228.6" y1="68.58" x2="228.6" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="233.68" y1="68.58" x2="233.68" y2="71.12" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="C8" gate="G$1" pin="2"/>
@@ -4767,7 +4781,7 @@ Neopixel LED strip.</text>
 <segment>
 <pinref part="C7" gate="G$1" pin="2"/>
 <pinref part="P20" gate="G$1" pin="GND"/>
-<wire x1="124.46" y1="81.28" x2="124.46" y2="83.82" width="0.1524" layer="91"/>
+<wire x1="121.92" y1="81.28" x2="121.92" y2="83.82" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="U2" gate="G$1" pin="A0"/>
@@ -4889,12 +4903,16 @@ Neopixel LED strip.</text>
 <pinref part="R14" gate="G$1" pin="2"/>
 <pinref part="P43" gate="G$1" pin="PVDD"/>
 </segment>
+<segment>
+<pinref part="R15" gate="G$1" pin="2"/>
+<pinref part="P44" gate="G$1" pin="PVDD"/>
+</segment>
 </net>
 <net name="N$14" class="0">
 <segment>
 <pinref part="U3" gate="G$1" pin="IO16"/>
 <pinref part="R8" gate="G$1" pin="1"/>
-<wire x1="167.64" y1="73.66" x2="177.8" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="165.1" y1="73.66" x2="172.72" y2="73.66" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="L" class="0">
@@ -4914,8 +4932,8 @@ Neopixel LED strip.</text>
 <net name="SDA" class="0">
 <segment>
 <pinref part="U3" gate="G$1" pin="IO4"/>
-<wire x1="167.64" y1="88.9" x2="170.18" y2="88.9" width="0.1524" layer="91"/>
-<label x="170.18" y="88.9" size="1.27" layer="95" font="vector" xref="yes"/>
+<wire x1="165.1" y1="88.9" x2="167.64" y2="88.9" width="0.1524" layer="91"/>
+<label x="167.64" y="88.9" size="1.27" layer="95" font="vector" xref="yes"/>
 </segment>
 <segment>
 <pinref part="J4" gate="G$1" pin="1"/>
@@ -4941,8 +4959,8 @@ Neopixel LED strip.</text>
 <net name="SCL" class="0">
 <segment>
 <pinref part="U3" gate="G$1" pin="IO5"/>
-<wire x1="167.64" y1="86.36" x2="170.18" y2="86.36" width="0.1524" layer="91"/>
-<label x="170.18" y="86.36" size="1.27" layer="95" font="vector" xref="yes"/>
+<wire x1="165.1" y1="86.36" x2="167.64" y2="86.36" width="0.1524" layer="91"/>
+<label x="167.64" y="86.36" size="1.27" layer="95" font="vector" xref="yes"/>
 </segment>
 <segment>
 <pinref part="J4" gate="G$1" pin="2"/>
@@ -4975,8 +4993,8 @@ Neopixel LED strip.</text>
 <net name="MISO" class="0">
 <segment>
 <pinref part="U3" gate="G$1" pin="IO12"/>
-<wire x1="167.64" y1="83.82" x2="170.18" y2="83.82" width="0.1524" layer="91"/>
-<label x="170.18" y="83.82" size="1.27" layer="95" font="vector" xref="yes"/>
+<wire x1="165.1" y1="83.82" x2="167.64" y2="83.82" width="0.1524" layer="91"/>
+<label x="167.64" y="83.82" size="1.27" layer="95" font="vector" xref="yes"/>
 </segment>
 <segment>
 <pinref part="J4" gate="G$1" pin="7"/>
@@ -4987,8 +5005,8 @@ Neopixel LED strip.</text>
 <net name="MOSI" class="0">
 <segment>
 <pinref part="U3" gate="G$1" pin="IO13"/>
-<wire x1="167.64" y1="81.28" x2="170.18" y2="81.28" width="0.1524" layer="91"/>
-<label x="170.18" y="81.28" size="1.27" layer="95" font="vector" xref="yes"/>
+<wire x1="165.1" y1="81.28" x2="167.64" y2="81.28" width="0.1524" layer="91"/>
+<label x="167.64" y="81.28" size="1.27" layer="95" font="vector" xref="yes"/>
 </segment>
 <segment>
 <pinref part="J4" gate="G$1" pin="6"/>
@@ -4999,7 +5017,7 @@ Neopixel LED strip.</text>
 <net name="N$10" class="0">
 <segment>
 <pinref part="U3" gate="G$1" pin="TOUT"/>
-<wire x1="167.64" y1="71.12" x2="170.18" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="165.1" y1="71.12" x2="167.64" y2="71.12" width="0.1524" layer="91"/>
 <pinref part="TP1" gate="G$1" pin="TP"/>
 </segment>
 </net>
@@ -5011,8 +5029,8 @@ Neopixel LED strip.</text>
 </segment>
 <segment>
 <pinref part="U3" gate="G$1" pin="IO14"/>
-<wire x1="167.64" y1="78.74" x2="170.18" y2="78.74" width="0.1524" layer="91"/>
-<label x="170.18" y="78.74" size="1.27" layer="95" font="vector" xref="yes"/>
+<wire x1="165.1" y1="78.74" x2="167.64" y2="78.74" width="0.1524" layer="91"/>
+<label x="167.64" y="78.74" size="1.27" layer="95" font="vector" xref="yes"/>
 </segment>
 </net>
 <net name="LED_DATA" class="0">
@@ -5063,6 +5081,12 @@ Neopixel LED strip.</text>
 <segment>
 <pinref part="D2" gate="G$1" pin="A"/>
 <pinref part="R14" gate="G$1" pin="1"/>
+</segment>
+</net>
+<net name="N$5" class="0">
+<segment>
+<pinref part="D3" gate="G$1" pin="A"/>
+<pinref part="R15" gate="G$1" pin="1"/>
 </segment>
 </net>
 </nets>
