@@ -10,6 +10,20 @@
 <grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.1" altunitdist="mm" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
+<layer number="3" name="Route3" color="4" fill="3" visible="no" active="no"/>
+<layer number="4" name="Route4" color="1" fill="4" visible="no" active="no"/>
+<layer number="5" name="Route5" color="4" fill="4" visible="no" active="no"/>
+<layer number="6" name="Route6" color="1" fill="8" visible="no" active="no"/>
+<layer number="7" name="Route7" color="4" fill="8" visible="no" active="no"/>
+<layer number="8" name="Route8" color="1" fill="2" visible="no" active="no"/>
+<layer number="9" name="Route9" color="4" fill="2" visible="no" active="no"/>
+<layer number="10" name="Route10" color="1" fill="7" visible="no" active="no"/>
+<layer number="11" name="Route11" color="4" fill="7" visible="no" active="no"/>
+<layer number="12" name="Route12" color="1" fill="5" visible="no" active="no"/>
+<layer number="13" name="Route13" color="4" fill="5" visible="no" active="no"/>
+<layer number="14" name="Route14" color="1" fill="6" visible="no" active="no"/>
+<layer number="15" name="Route15" color="4" fill="6" visible="no" active="no"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
@@ -221,9 +235,9 @@
 <wire x1="27.6" y1="24.1" x2="21.8" y2="24.1" width="0.127" layer="21"/>
 <wire x1="21.8" y1="24.1" x2="21.8" y2="25.9" width="0.127" layer="21"/>
 <hole x="62" y="40" drill="3.2"/>
-<text x="66" y="40" size="1.016" layer="51" font="vector" ratio="12" align="center-left">For strapping down 
+<text x="66" y="40" size="1.016" layer="51" font="vector" ratio="12" align="center-left">For strapping down
 the transformers</text>
-<text x="-1" y="45" size="1.016" layer="51" font="vector" ratio="12" rot="R180" align="center-left">For zip-tying the 
+<text x="-1" y="45" size="1.016" layer="51" font="vector" ratio="12" rot="R180" align="center-left">For zip-tying the
 cables to LED-strip</text>
 <text x="-1" y="77" size="1.016" layer="51" font="vector" ratio="12" rot="R180" align="center-left">M3 screw size</text>
 <text x="16.4" y="2.5" size="1.016" layer="22" font="vector" ratio="12" rot="MR180" align="center-left">ADC</text>
@@ -343,40 +357,6 @@ cables to LED-strip</text>
 <wire x1="9.3" y1="0" x2="9.3" y2="7" width="0.122" layer="21"/>
 <wire x1="-5.9" y1="0" x2="-9.3" y2="0" width="0.122" layer="21"/>
 <wire x1="-9.3" y1="0" x2="-9.3" y2="7" width="0.122" layer="21"/>
-</package>
-<package name="ESP13">
-<wire x1="9" y1="-10" x2="-9" y2="-10" width="0.122" layer="51"/>
-<wire x1="-9" y1="-10" x2="-9" y2="10" width="0.122" layer="51"/>
-<wire x1="-9" y1="10" x2="9" y2="10" width="0.122" layer="51"/>
-<wire x1="9" y1="10" x2="9" y2="-10" width="0.122" layer="51"/>
-<smd name="EN" x="-9.3" y="1.5" dx="2.54" dy="1" layer="1"/>
-<smd name="IO14" x="-9.3" y="0" dx="2.54" dy="1" layer="1"/>
-<smd name="IO12" x="-9.3" y="-1.5" dx="2.54" dy="1" layer="1"/>
-<smd name="IO13" x="-9.3" y="-3" dx="2.54" dy="1" layer="1"/>
-<smd name="IO15" x="-9.3" y="-4.5" dx="2.54" dy="1" layer="1"/>
-<smd name="IO2" x="-9.3" y="-6" dx="2.54" dy="1" layer="1"/>
-<smd name="IO0" x="-9.3" y="-7.5" dx="2.54" dy="1" layer="1"/>
-<smd name="GND$3" x="-9.3" y="-9" dx="2.54" dy="1" layer="1"/>
-<smd name="3V3" x="-9.3" y="3" dx="2.54" dy="1" layer="1"/>
-<smd name="IO16" x="9.3" y="1.5" dx="2.54" dy="1" layer="1"/>
-<smd name="TOUT" x="9.3" y="0" dx="2.54" dy="1" layer="1"/>
-<smd name="RST" x="9.3" y="-1.5" dx="2.54" dy="1" layer="1"/>
-<smd name="IO5" x="9.3" y="-3" dx="2.54" dy="1" layer="1"/>
-<smd name="GND$1" x="9.3" y="-4.5" dx="2.54" dy="1" layer="1"/>
-<smd name="TXD" x="9.3" y="-6" dx="2.54" dy="1" layer="1"/>
-<smd name="RXD" x="9.3" y="-7.5" dx="2.54" dy="1" layer="1"/>
-<smd name="IO4" x="9.3" y="-9" dx="2.54" dy="1" layer="1"/>
-<smd name="GND$2" x="9.3" y="3" dx="2.54" dy="1" layer="1"/>
-<wire x1="-9" y1="-10" x2="9" y2="-10" width="0.122" layer="21"/>
-<wire x1="-9" y1="4" x2="-9" y2="10" width="0.122" layer="21"/>
-<wire x1="-9" y1="10" x2="9" y2="10" width="0.122" layer="21"/>
-<wire x1="9" y1="10" x2="9" y2="4" width="0.122" layer="21"/>
-<wire x1="9" y1="4" x2="-9" y2="4" width="0.122" layer="21"/>
-<smd name="GND$4" x="1.5" y="-4" dx="4" dy="4" layer="1"/>
-<text x="-9" y="-11" size="1.016" layer="25" font="vector" ratio="12" align="center-left">&gt;NAME</text>
-<text x="9" y="-11" size="1.016" layer="51" font="vector" ratio="12" rot="R180" align="center-left">ESP8266-13</text>
-<rectangle x1="-9" y1="4" x2="9" y2="10" layer="39"/>
-<rectangle x1="-9" y1="4" x2="9" y2="10" layer="40"/>
 </package>
 <package name="1X3_MOLEX_53254">
 <description>&lt;h1&gt;1x3 Molex 2.0 mm Wire Housings&lt;/h1&gt;
@@ -1250,13 +1230,13 @@ We've spent an enormous amount of time creating and checking these footprints an
 </package>
 </packages>
 </library>
-<library name="testpad">
+<library name="testpad" urn="urn:adsk.eagle:library:385">
 <description>&lt;b&gt;Test Pins/Pads&lt;/b&gt;&lt;p&gt;
 Cream on SMD OFF.&lt;br&gt;
 new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 &lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
 <packages>
-<package name="TP15R">
+<package name="TP15R" urn="urn:adsk.eagle:footprint:27924/1" library_version="1">
 <description>&lt;b&gt;TEST PAD&lt;/b&gt;</description>
 <smd name="TP" x="0" y="0" dx="1.5" dy="1.5" layer="1" roundness="100" cream="no"/>
 <text x="-0.7501" y="0.8001" size="1.27" layer="25">&gt;NAME</text>
@@ -1264,6 +1244,14 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <text x="0" y="-2.54" size="1" layer="37">&gt;TP_SIGNAL_NAME</text>
 </package>
 </packages>
+<packages3d>
+<package3d name="TP15R" urn="urn:adsk.eagle:package:27968/1" type="box" library_version="1">
+<description>TEST PAD</description>
+<packageinstances>
+<packageinstance name="TP15R"/>
+</packageinstances>
+</package3d>
+</packages3d>
 </library>
 <library name="Connectors">
 <packages>
@@ -1275,6 +1263,44 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <wire x1="2.47" y1="-1.2" x2="-2.47" y2="-1.2" width="0.127" layer="21"/>
 <wire x1="-2.47" y1="-1.2" x2="-2.47" y2="1.2" width="0.127" layer="21"/>
 <text x="-2.53" y="2" size="1.016" layer="25" font="vector" ratio="12" align="center-left">&gt;NAME</text>
+</package>
+</packages>
+</library>
+<library name="Modules">
+<description>&lt;h1&gt;Modules&lt;/h1&gt;
+
+&lt;p&gt;Footprints and dimensions for various modules.&lt;/p&gt;</description>
+<packages>
+<package name="ESP13">
+<wire x1="9" y1="-10" x2="-9" y2="-10" width="0.122" layer="51"/>
+<wire x1="-9" y1="-10" x2="-9" y2="10" width="0.122" layer="51"/>
+<wire x1="-9" y1="10" x2="9" y2="10" width="0.122" layer="51"/>
+<wire x1="9" y1="10" x2="9" y2="-10" width="0.122" layer="51"/>
+<smd name="EN" x="-9.3" y="1.5" dx="2.54" dy="1" layer="1"/>
+<smd name="IO14" x="-9.3" y="0" dx="2.54" dy="1" layer="1"/>
+<smd name="IO12" x="-9.3" y="-1.5" dx="2.54" dy="1" layer="1"/>
+<smd name="IO13" x="-9.3" y="-3" dx="2.54" dy="1" layer="1"/>
+<smd name="IO15" x="-9.3" y="-4.5" dx="2.54" dy="1" layer="1"/>
+<smd name="IO2" x="-9.3" y="-6" dx="2.54" dy="1" layer="1"/>
+<smd name="IO0" x="-9.3" y="-7.5" dx="2.54" dy="1" layer="1"/>
+<smd name="GND$3" x="-9.3" y="-9" dx="2.54" dy="1" layer="1"/>
+<smd name="3V3" x="-9.3" y="3" dx="2.54" dy="1" layer="1"/>
+<smd name="IO16" x="9.3" y="1.5" dx="2.54" dy="1" layer="1"/>
+<smd name="TOUT" x="9.3" y="0" dx="2.54" dy="1" layer="1"/>
+<smd name="RST" x="9.3" y="-1.5" dx="2.54" dy="1" layer="1"/>
+<smd name="IO5" x="9.3" y="-3" dx="2.54" dy="1" layer="1"/>
+<smd name="GND$1" x="9.3" y="-4.5" dx="2.54" dy="1" layer="1"/>
+<smd name="TXD" x="9.3" y="-6" dx="2.54" dy="1" layer="1"/>
+<smd name="RXD" x="9.3" y="-7.5" dx="2.54" dy="1" layer="1"/>
+<smd name="IO4" x="9.3" y="-9" dx="2.54" dy="1" layer="1"/>
+<smd name="GND$2" x="9.3" y="3" dx="2.54" dy="1" layer="1"/>
+<wire x1="-7.5" y1="-9.5" x2="7.5" y2="-9.5" width="0.122" layer="21"/>
+<wire x1="7.5" y1="3.5" x2="-7.5" y2="3.5" width="0.122" layer="21"/>
+<smd name="GND$4" x="1.5" y="-4" dx="4" dy="4" layer="1"/>
+<text x="-9" y="-11" size="1.016" layer="25" font="vector" ratio="12" align="center-left">&gt;NAME</text>
+<text x="9" y="-11" size="1.016" layer="51" font="vector" ratio="12" rot="R180" align="center-left">ESP8266-13</text>
+<rectangle x1="-9" y1="4" x2="9" y2="10" layer="39"/>
+<rectangle x1="-9" y1="4" x2="9" y2="10" layer="40"/>
 </package>
 </packages>
 </library>
@@ -1290,10 +1316,10 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <designrules name="SeeedStudio_2layer_DRU_no_angle_20140221">
 <description language="de">&lt;b&gt;EAGLE Design Rules&lt;/b&gt;
 &lt;p&gt;
-Die Standard-Design-Rules sind so gewählt, dass sie für 
-die meisten Anwendungen passen. Sollte ihre Platine 
+Die Standard-Design-Rules sind so gewählt, dass sie für
+die meisten Anwendungen passen. Sollte ihre Platine
 besondere Anforderungen haben, treffen Sie die erforderlichen
-Einstellungen hier und speichern die Design Rules unter 
+Einstellungen hier und speichern die Design Rules unter
 einem neuen Namen ab.</description>
 <description language="en">&lt;b&gt;EAGLE Design Rules&lt;/b&gt;
 &lt;p&gt;
@@ -1480,9 +1506,7 @@ design rules under a new name.</description>
 <attribute name="NAME" x="13.2" y="23" size="1.016" layer="25" font="vector" ratio="12" rot="R180" align="center-left"/>
 </element>
 <element name="J2" library="Sebastian" package="IEC_C8_RIGHT" value="" x="91" y="60" rot="R270"/>
-<element name="U3" library="Sebastian" package="ESP13" value="ESP8266_13" x="20.5" y="4" smashed="yes" rot="R180">
-<attribute name="NAME" x="29.5" y="15" size="1.016" layer="25" font="vector" ratio="12" rot="R180" align="center-left"/>
-</element>
+<element name="U3" library="Modules" package="ESP13" value="ESP8266_13" x="20.5" y="4" rot="R180"/>
 <element name="JP1" library="Sebastian" package="1X3_MOLEX_53254" value="" x="28" y="40" rot="R90"/>
 <element name="J5" library="Sebastian" package="1X2_MOLEX_53254" value="" x="28" y="54" rot="R90"/>
 <element name="C8" library="Sebastian" package="AVE_X" value="" x="33" y="54" rot="R270"/>
@@ -1553,22 +1577,22 @@ design rules under a new name.</description>
 </element>
 <element name="C2" library="Sebastian" package="0603" value=".1u" x="5" y="70.5" rot="R180"/>
 <element name="C3" library="Sebastian" package="0603" value=".1u" x="5" y="72" rot="R180"/>
-<element name="TP1" library="testpad" package="TP15R" value="TPTP15R" x="15" y="4" smashed="yes" rot="MR0">
+<element name="TP1" library="testpad" library_urn="urn:adsk.eagle:library:385" package="TP15R" package3d_urn="urn:adsk.eagle:package:27968/1" value="TPTP15R" x="15" y="4" smashed="yes" rot="MR0">
 <attribute name="NAME" x="16.4" y="4" size="1.016" layer="26" font="vector" ratio="12" rot="MR180" align="center-left"/>
 <attribute name="TP_SIGNAL_NAME" value="" x="15" y="1.46" size="1" layer="38" rot="MR0"/>
 <attribute name="VALUE" x="15.635" y="3.238" size="0.0254" layer="28" rot="MR0"/>
 </element>
-<element name="TP2" library="testpad" package="TP15R" value="TPTP15R" x="18.7" y="25.1" smashed="yes">
+<element name="TP2" library="testpad" library_urn="urn:adsk.eagle:library:385" package="TP15R" package3d_urn="urn:adsk.eagle:package:27968/1" value="TPTP15R" x="18.7" y="25.1" smashed="yes">
 <attribute name="NAME" x="18.7" y="23.5" size="1.016" layer="25" font="vector" ratio="12" align="center"/>
 <attribute name="TP_SIGNAL_NAME" value="" x="18.7" y="22.56" size="1" layer="37"/>
 <attribute name="VALUE" x="18.065" y="24.338" size="0.0254" layer="27"/>
 </element>
-<element name="TP3" library="testpad" package="TP15R" value="TPTP15R" x="18.7" y="27.64" smashed="yes">
+<element name="TP3" library="testpad" library_urn="urn:adsk.eagle:library:385" package="TP15R" package3d_urn="urn:adsk.eagle:package:27968/1" value="TPTP15R" x="18.7" y="27.64" smashed="yes">
 <attribute name="NAME" x="18.7" y="29.24" size="1.016" layer="25" font="vector" ratio="12" align="center"/>
 <attribute name="TP_SIGNAL_NAME" value="" x="18.7" y="25.1" size="1" layer="37"/>
 <attribute name="VALUE" x="18.065" y="26.878" size="0.0254" layer="27"/>
 </element>
-<element name="TP4" library="testpad" package="TP15R" value="TPTP15R" x="4.5" y="52" smashed="yes">
+<element name="TP4" library="testpad" library_urn="urn:adsk.eagle:library:385" package="TP15R" package3d_urn="urn:adsk.eagle:package:27968/1" value="TPTP15R" x="4.5" y="52" smashed="yes">
 <attribute name="NAME" x="2.7" y="53" size="1.016" layer="25" font="vector" ratio="12" rot="R270" align="center-left"/>
 <attribute name="TP_SIGNAL_NAME" value="" x="4.5" y="49.46" size="1" layer="37"/>
 <attribute name="VALUE" x="3.865" y="51.238" size="0.0254" layer="27"/>
@@ -1588,12 +1612,12 @@ design rules under a new name.</description>
 <element name="R15" library="Sebastian" package="0603" value="1k" x="92.8" y="19.4" smashed="yes" rot="R180">
 <attribute name="NAME" x="90" y="19.9" size="1.016" layer="25" font="vector" ratio="12" rot="R180" align="center-left"/>
 </element>
-<element name="TP5" library="testpad" package="TP15R" value="TPTP15R" x="33" y="16" smashed="yes">
+<element name="TP5" library="testpad" library_urn="urn:adsk.eagle:library:385" package="TP15R" package3d_urn="urn:adsk.eagle:package:27968/1" value="TPTP15R" x="33" y="16" smashed="yes">
 <attribute name="NAME" x="34.7" y="16" size="1.016" layer="25" font="vector" ratio="12" rot="R45" align="center-left"/>
 <attribute name="TP_SIGNAL_NAME" value="" x="33" y="13.46" size="1" layer="37"/>
 <attribute name="VALUE" x="32.365" y="15.238" size="0.0254" layer="27"/>
 </element>
-<element name="TP6" library="testpad" package="TP15R" value="TPTP15R" x="33" y="18.54" smashed="yes">
+<element name="TP6" library="testpad" library_urn="urn:adsk.eagle:library:385" package="TP15R" package3d_urn="urn:adsk.eagle:package:27968/1" value="TPTP15R" x="33" y="18.54" smashed="yes">
 <attribute name="NAME" x="34.7" y="18.54" size="1.016" layer="25" font="vector" ratio="12" rot="R45" align="center-left"/>
 <attribute name="TP_SIGNAL_NAME" value="" x="33" y="16" size="1" layer="37"/>
 <attribute name="VALUE" x="32.365" y="17.778" size="0.0254" layer="27"/>
@@ -2304,6 +2328,21 @@ design rules under a new name.</description>
 <note version="6.3" minversion="6.2.2" severity="warning">
 Since Version 6.2.2 text objects can contain more than one line,
 which will not be processed correctly with this version.
+</note>
+<note version="8.2" severity="warning">
+Since Version 8.2, EAGLE supports online libraries. The ids
+of those online libraries will not be understood (or retained)
+with this version.
+</note>
+<note version="8.3" severity="warning">
+Since Version 8.3, EAGLE supports URNs for individual library
+assets (packages, symbols, and devices). The URNs of those assets
+will not be understood (or retained) with this version.
+</note>
+<note version="8.3" severity="warning">
+Since Version 8.3, EAGLE supports the association of 3D packages
+with devices in libraries, schematics, and board files. Those 3D
+packages will not be understood (or retained) with this version.
 </note>
 </compatibility>
 </eagle>
