@@ -303,6 +303,23 @@ cables to LED-strip</text>
 <text x="1.1" y="9.92" size="0.6096" layer="22" font="vector" ratio="12" rot="MR270" align="bottom-center">IO5</text>
 <text x="1" y="15" size="0.6096" layer="22" font="vector" ratio="12" rot="MR270" align="bottom-center">IO13</text>
 <text x="1" y="17.54" size="0.6096" layer="22" font="vector" ratio="12" rot="MR270" align="bottom-center">IO14</text>
+<wire x1="37" y1="36" x2="86.2" y2="36" width="0" layer="46"/>
+<wire x1="86.2" y1="36" x2="86.2" y2="5" width="0" layer="46"/>
+<wire x1="86.2" y1="5" x2="37" y2="5" width="0" layer="46"/>
+<wire x1="37" y1="5" x2="37" y2="36" width="0" layer="46"/>
+<wire x1="37" y1="44" x2="86.2" y2="44" width="0" layer="46"/>
+<wire x1="86.2" y1="44" x2="86.2" y2="75" width="0" layer="46"/>
+<wire x1="86.2" y1="75" x2="37" y2="75" width="0" layer="46"/>
+<wire x1="37" y1="75" x2="37" y2="44" width="0" layer="46"/>
+<wire x1="36.6" y1="75.4" x2="86.6" y2="75.4" width="0.127" layer="21"/>
+<wire x1="86.6" y1="75.4" x2="86.6" y2="43.6" width="0.127" layer="21"/>
+<wire x1="86.6" y1="43.6" x2="36.6" y2="43.6" width="0.127" layer="21"/>
+<wire x1="36.6" y1="43.6" x2="36.6" y2="75.4" width="0.127" layer="21"/>
+<wire x1="36.6" y1="36.4" x2="86.6" y2="36.4" width="0.127" layer="21"/>
+<wire x1="86.6" y1="36.4" x2="86.6" y2="4.6" width="0.127" layer="21"/>
+<wire x1="86.6" y1="4.6" x2="36.6" y2="4.6" width="0.127" layer="21"/>
+<wire x1="36.6" y1="36.4" x2="36.6" y2="21.1" width="0.127" layer="21"/>
+<wire x1="36.6" y1="4.6" x2="36.6" y2="7.6" width="0.127" layer="21"/>
 </plain>
 <libraries>
 <library name="Sebastian">
