@@ -4294,6 +4294,8 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <part name="D3" library="Sebastian" deviceset="LED" device="_0805"/>
 <part name="R15" library="Sebastian" deviceset="R" device="_0603" value="1k"/>
 <part name="P44" library="aesthetics" deviceset="PVDD" device=""/>
+<part name="TP5" library="testpad" deviceset="TP" device="TP15R" value="TPTP15R"/>
+<part name="TP6" library="testpad" deviceset="TP" device="TP15R" value="TPTP15R"/>
 </parts>
 <sheets>
 <sheet>
@@ -4420,6 +4422,8 @@ Neopixel LED strip.</text>
 <instance part="D3" gate="G$1" x="198.12" y="76.2"/>
 <instance part="R15" gate="G$1" x="198.12" y="83.82" rot="R90"/>
 <instance part="P44" gate="G$1" x="198.12" y="88.9"/>
+<instance part="TP5" gate="G$1" x="167.64" y="96.52"/>
+<instance part="TP6" gate="G$1" x="177.8" y="96.52"/>
 </instances>
 <busses>
 </busses>
@@ -4576,6 +4580,8 @@ Neopixel LED strip.</text>
 <pinref part="U3" gate="G$1" pin="IO2"/>
 <wire x1="165.1" y1="91.44" x2="167.64" y2="91.44" width="0.1524" layer="91"/>
 <label x="167.64" y="91.44" size="1.27" layer="95" font="vector" xref="yes"/>
+<pinref part="TP5" gate="G$1" pin="TP"/>
+<wire x1="167.64" y1="93.98" x2="167.64" y2="91.44" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="R3" gate="G$1" pin="1"/>
@@ -4670,6 +4676,11 @@ Neopixel LED strip.</text>
 <pinref part="U$1" gate="G$1" pin="1"/>
 <wire x1="129.54" y1="157.48" x2="127" y2="157.48" width="0.1524" layer="91"/>
 <label x="127" y="157.48" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="TP6" gate="G$1" pin="TP"/>
+<wire x1="177.8" y1="93.98" x2="177.8" y2="91.44" width="0.1524" layer="91"/>
+<label x="177.8" y="91.44" size="1.524" layer="95" font="vector" rot="R270" xref="yes"/>
 </segment>
 </net>
 <net name="TXD" class="0">
